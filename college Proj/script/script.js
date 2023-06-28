@@ -88,7 +88,7 @@ function displayRoutes(source, destination, availableDestinations) {
     bookedSeatsText.textContent = "Booked Seats: " + dest.bookedSeats;
 
     const priceText = document.createElement("p");
-    priceText.textContent = "Price: RS " + dest.price +"0";
+    priceText.textContent = "Price: RS " + dest.price + "0";
 
     const ratingText = document.createElement("p");
     ratingText.textContent = "Rating: " + dest.rating;
@@ -119,8 +119,8 @@ function displayRoutes(source, destination, availableDestinations) {
 }
 
 function openPopup(source, dest) {
-  const price=document.getElementById("price");
-  price.value=dest.price;
+  const price = document.getElementById("price");
+  price.value = dest.price;
   popupOverlay.style.display = "flex";
 
   const busInfo = {
@@ -145,7 +145,7 @@ function openPopup(source, dest) {
     const cardNumber = document.getElementById("cardNumber").value;
     const cardExpiry = document.getElementById("cardExpiry").value;
     const cardCVV = document.getElementById("cardCVV").value;
-    price.value=busInfo.price;
+    price.value = busInfo.price;
     closePopup();
 
     fetch('/addBooking', {
@@ -563,18 +563,16 @@ function deleteBusFromUser(user, busId) {
   showInfo('Booking successfully deleted.');
 }
 
-function showInfo(err){
-  const errorContent=document.getElementById('error-content');
+function showInfo(err) {
+  const errorContent = document.getElementById('error-content');
   const errorPopup = document.getElementById('error-popup');
 
-  const error=document.createElement('div');
-  error.textContent=err;
+  const error = document.createElement('div');
+  error.textContent = err;
 
   errorContent.appendChild(error);
-  errorPopup.style.display='block';
+  errorPopup.style.display = 'block';
 }
-
-showInfo('test');
 
 const errorPopupClose = document.getElementById('errorPopupClose');
 
@@ -583,7 +581,7 @@ errorPopupClose.addEventListener('click', () => {
   errorPopup.style.display = 'none';
 });
 
- 
+
 
 
 
