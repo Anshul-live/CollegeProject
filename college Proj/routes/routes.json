@@ -1,0 +1,199 @@
+{
+  "routes": [
+    {
+      "source": "Delhi",
+      "destinations": [
+        {
+          "busId": 1,
+          "name": "Gurugram",
+          "time": "10:00 AM",
+          "seatsAvailable": 20,
+          "bookedSeats": 5,
+          "price": 10,
+          "rating": 4.5,
+          "date": "2023-06-27"
+        },
+        {
+          "busId": 2,
+          "name": "Gurugram",
+          "time": "2:00 PM",
+          "seatsAvailable": 15,
+          "bookedSeats": 8,
+          "price": 12,
+          "rating": 4.2,
+          "date": "2023-06-27"
+        },
+        {
+          "busId": 3,
+          "name": "Noida",
+          "time": "11:30 AM",
+          "seatsAvailable": 18,
+          "bookedSeats": 2,
+          "price": 8,
+          "rating": 4.8,
+          "date": "2023-06-27"
+        },
+        {
+          "busId": 4,
+          "name": "Faridabad",
+          "time": "1:30 PM",
+          "seatsAvailable": 12,
+          "bookedSeats": 4,
+          "price": 9,
+          "rating": 4.0,
+          "date": "2023-06-27"
+        },
+        {
+          "busId": 5,
+          "name": "Ghaziabad",
+          "time": "3:00 PM",
+          "seatsAvailable": 10,
+          "bookedSeats": 6,
+          "price": 11,
+          "rating": 4.3,
+          "date": "2023-06-27"
+        }
+      ]
+    },
+    {
+      "source": "Gurugram",
+      "destinations": [
+        {
+          "busId": 6,
+          "name": "Delhi",
+          "time": "9:00 AM",
+          "seatsAvailable": 25,
+          "bookedSeats": 3,
+          "price": 10,
+          "rating": 4.7,
+          "date": "2023-06-27"
+        },
+        {
+          "busId": 7,
+          "name": "Noida",
+          "time": "12:00 PM",
+          "seatsAvailable": 20,
+          "bookedSeats": 10,
+          "price": 11,
+          "rating": 4.5,
+          "date": "2023-06-27"
+        },
+        {
+          "busId": 8,
+          "name": "Faridabad",
+          "time": "3:30 PM",
+          "seatsAvailable": 15,
+          "bookedSeats": 6,
+          "price": 12,
+          "rating": 4.0,
+          "date": "2023-06-27"
+        }
+      ]
+    },
+    {
+      "source": "Noida",
+      "destinations": [
+        {
+          "busId": 9,
+          "name": "Delhi",
+          "time": "11:00 AM",
+          "seatsAvailable": 22,
+          "bookedSeats": 7,
+          "price": 9,
+          "rating": 4.2,
+          "date": "2023-06-27"
+        },
+        {
+          "busId": 10,
+          "name": "Gurugram",
+          "time": "1:30 PM",
+          "seatsAvailable": 18,
+          "bookedSeats": 4,
+          "price": 10,
+          "rating": 4.5,
+          "date": "2023-06-27"
+        },
+        {
+          "busId": 11,
+          "name": "Faridabad",
+          "time": "4:00 PM",
+          "seatsAvailable": 20,
+          "bookedSeats": 5,
+          "price": 11,
+          "rating": 4.3,
+          "date": "2023-06-27"
+        }
+      ]
+    },
+    {
+      "source": "Faridabad",
+      "destinations": [
+        {
+          "busId": 12,
+          "name": "Delhi",
+          "time": "12:30 PM",
+          "seatsAvailable": 15,
+          "bookedSeats": 6,
+          "price": 9,
+          "rating": 4.0,
+          "date": "2023-06-27"
+        },
+        {
+          "busId": 13,
+          "name": "Gurugram",
+          "time": "3:00 PM",
+          "seatsAvailable": 12,
+          "bookedSeats": 3,
+          "price": 10,
+          "rating": 4.2,
+          "date": "2023-06-27"
+        },
+        {
+          "busId": 14,
+          "name": "Noida",
+          "time": "5:30 PM",
+          "seatsAvailable": 16,
+          "bookedSeats": 2,
+          "price": 11,
+          "rating": 4.4,
+          "date": "2023-06-27"
+        }
+      ]
+    },
+    {
+      "source": "Ghaziabad",
+      "destinations": [
+        {
+          "busId": 15,
+          "name": "Delhi",
+          "time": "1:00 PM",
+          "seatsAvailable": 18,
+          "bookedSeats": 5,
+          "price": 10,
+          "rating": 4.3,
+          "date": "2023-06-27"
+        },
+        {
+          "busId": 16,
+          "name": "Noida",
+          "time": "3:30 PM",
+          "seatsAvailable": 14,
+          "bookedSeats": 3,
+          "price": 9,
+          "rating": 4.1,
+          "date": "2023-06-27"
+        },
+        {
+          "busId": 17,
+          "name": "Faridabad",
+          "time": "5:00 PM",
+          "seatsAvailable": 10,
+          "bookedSeats": 8,
+          "price": 12,
+          "rating": 4.2,
+          "date": "2023-06-27"
+        }
+      ]
+    }
+  ]
+}

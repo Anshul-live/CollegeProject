@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BUS BOOKING SYSTEM</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img class="logo" src="https://t4.ftcdn.net/jpg/03/20/38/89/360_F_320388953_j2DOQNdq5og1zrpipaqJWahiHLqm54ee.jpg"
+        alt="Bus Logo">
+      <h1>Bus Booking System</h1>
+      <div id="accountOptions">
+        <div id="signup/login">
+          <a id="signInLink">Sign In</a>
+          <a id="loginLink">Login</a>
+        </div>
+        <img id="profileImg" src="" alt="User Profile" style="display: none;">
+      </div>
+    </header>
+
+    <form id="searchForm">
+      <input type="text" id="name" name="name" placeholder="Enter name" required>
+      <input type="number" id="mobileNumber" name="mobileNumber" placeholder="Enter mobile number" required>
+      <input type="text" id="source" name="source" placeholder="Enter source" required>
+      <input type="text" id="destination" name="destination" placeholder="Enter destination" required>
+      <input type="date" id="date" name="date" placeholder="Enter date" required>
+      <select id="passengers" name="passengers" required>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="5+">5+</option>
+      </select>
+      <input type="button" id="search" name="search" value="search buses">
+    </form>
+    <div id="routeContainer"></div>
+  </div>
+
+  <div id="popupOverlay" class="popup-overlay">
+    <div id="popupContent" class="popup-content">
+      <div class="popup-close">
+        <button id="popupClose">X</button>
+      </div>
+      <h3 id="popupSource"></h3>
+      <h3 id="popupDestination"></h3>
+      <form id="paymentForm" class="payment-form">
+        <label for="cardNumber">Card Number</label>
+        <input type="text" id="cardNumber" required>
+        <label for="cardExpiry">Card Expiry</label>
+        <input type="text" id="cardExpiry" required>
+        <label for="cardCVV">Card CVV</label>
+        <input type="text" id="cardCVV" required>
+        <label for="price">price</label>
+        <input type="text" name="price" id="price" readonly>
+        <button type="submit">Pay Now</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Signup Popup -->
+  <div id="signupPopup" class="popup-overlay">
+    <div class="popup-content">
+      <div class="popup-close">
+        <button id="signupClose">X</button>
+      </div>
+      <h3>Signup</h3>
+      <form id="signupForm" target="/signup">
+        Name
+        <input type="text" id="signupName" required>
+        Email
+        <input type="email" id="signupEmail" required>
+        Password
+        <input type="password" id="signupPassword" required>
+        Mobile Number
+        <input type="tel" id="signupMobile" required>
+        <button type="button" id="signupButton">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Login Popup -->
+  <div id="loginPopup" class="popup-overlay">
+    <div class="popup-content">
+      <div class="popup-close">
+        <button id="loginClose">X</button>
+      </div>
+      <h3>Login</h3>
+      <form id="loginForm">
+        Email
+        <input type="email" id="loginEmail" required>
+        Password
+        <input type="password" id="loginPassword" required>
+        <!-- Additional login fields here -->
+        <button type="button" id="loginButton">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- User Account Popup -->
+  <div id="userAccountPopup" class="popup-overlay">
+    <div class="popup-content">
+      <div class="popup-close">
+        <button id="accountPopupClose">X</button>
+      </div>
+      <div class="user-profile">
+        <img id="userProfileImage" src="" alt="User Profile">
+      </div>
+      <div class="user-actions">
+        <button id="editProfileBtn">Edit Profile</button>
+        <button id="bookingsBtn">My Bookings</button>
+        <button id="logoutBtn">Logout</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="editProfilePopup" class="popup-overlay">
+    <div class="popup-content">
+      <div class="popup-close">
+        <button id="editPopupClose">X</button>
+      </div>
+      <input type="text" id="editName" placeholder="New name">
+      <input type="tel" id="editNumber" placeholder="New number">
+      <input type="password" id="oldPassword" placeholder="Old password">
+      <input type="password" id="editPassword" placeholder="New password">
+      <input type="button" id="confirmEdit" value="Confirm">
+    </div>
+  </div>
+
+  <div id="userBookingsContainer">
+    <div class="popup-close">
+    </div>
+  </div>
+
+  <div id="error-popup">
+    <button id="errorPopupClose">X</button>
+    <div id="error-content"></div>
+  </div>
+
+  <footer>
+    <script src="./script/script.js"></script>
+    <script src="./server.js"></script>
+  </footer>
+</body>
+
+</html>
