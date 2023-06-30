@@ -268,6 +268,11 @@ select {
   background-color: white;
 }
 
+#signupName {
+  color: black;
+}
+
+
 #signupPopup form button {
   background-color: #555;
   color: white;
@@ -495,6 +500,29 @@ select {
 #error-content {
   width: 350px;
   background-color: #222222;
+}
+
+#imageInputPopup{
+  display: block;
+  width: 500px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:#222222;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#imagePopupClose {
+  float: right;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
 }
 
 
